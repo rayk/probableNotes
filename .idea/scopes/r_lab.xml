@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="r lab" pattern="file[r_lab]:*/&amp;&amp;!file[dart_lab]:*/&amp;&amp;!file[notes]:*/" />
+</component>

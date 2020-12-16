@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes.">
-      <change afterPath="$PROJECT_DIR$/dart_lab/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dart_lab/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dart_lab/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dart_lab/analysis_options.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dart_lab/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/r_lab/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(dartlab): Adds initial lab configurations and ensured test are running">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/dart_lab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/notes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/r_lab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/bin/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/doc/explian.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/_bookdown.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/_output.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/index.Rmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/r_lab/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/r_lab/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +28,32 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="R Script" />
+        <option value="Dart File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="chore(repo): Adds initial repo structure.&#10;&#10;- Directory/Module for the actual note book.&#10;- Directory/Module for the r lab.&#10;- Directory/Model for the dart lab." />
+        <option name="rewordedMessage" value="chore(repo): Adds initial setup for notebook and labs.&#10;&#10;- dartlab: initial lab configurations and ensured test are running.&#10;- repo: project config files, in the repository.&#10;- Directory/Module for the actual note book.&#10;- Directory/Module for the r lab.&#10;- Directory/Model for the dart lab." />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="2aff81bc6c006bb12354de6d40411f21ad7c458d" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="notes" />
+      <scope name="dart lab" />
+      <scope name="r lab" />
+    </order>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -50,14 +72,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tests in dart_lab_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/dart_lab/test/dart_lab_test.dart" />
+      <option name="testName" value="dart_lab_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Test.Tests in dart_lab_test.dart" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,15 +123,34 @@
       <option name="project" value="LOCAL" />
       <updated>1608095480037</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore(dartlab): Adds initial lab configurations and ensured test are running">
+      <created>1608096237571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608096237571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore(repo): Adds initial repo structure.&#10;&#10;- Directory/Module for the actual note book.&#10;- Directory/Module for the r lab.&#10;- Directory/Model for the dart lab." />
     <MESSAGE value="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes." />
+    <MESSAGE value="chore(dartlab): Adds initial lab configurations and ensured test are running" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(dartlab): Adds initial lab configurations and ensured test are running" />
   </component>
 </project>
