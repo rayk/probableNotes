@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="" />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes.">
+      <change afterPath="$PROJECT_DIR$/dart_lab/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dart_lab/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r_lab/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +20,16 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="R Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -17,6 +37,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1lizhO9lH23B9Cw0DT90eZvehIc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollFromSource" value="true" />
@@ -31,9 +52,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,9 +68,29 @@
       <option name="presentableId" value="Default" />
       <updated>1608094818368</updated>
     </task>
+    <task id="LOCAL-00001" summary="chore(repo): Adds initial repo structure.&#10;&#10;- Directory/Module for the actual note book.&#10;- Directory/Module for the r lab.&#10;- Directory/Model for the dart lab.">
+      <created>1608095383579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608095383579</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes.">
+      <created>1608095480036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608095480037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore(repo): Adds initial repo structure.&#10;&#10;- Directory/Module for the actual note book.&#10;- Directory/Module for the r lab.&#10;- Directory/Model for the dart lab." />
+    <MESSAGE value="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(repo): Adds project configuration files to repo&#10;&#10;- Just too hard to have different configs on different boxes." />
   </component>
 </project>
