@@ -179,3 +179,4 @@ vignettes/*.pdf
 # R package: bookdown caching files
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,intellij,r,bookdown
+packrat/lib*/
