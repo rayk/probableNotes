@@ -1,6 +1,9 @@
 book_filename: "notes"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Section "
 delete_merged_file: true
+view: https://github.com/rayk/probableNotes/blob/master/notes/%s
+edit: https://github.com/rayk/probableNotes/blob/master/notes/%s
 clean_book: true
+output_dir: "book"

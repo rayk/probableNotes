@@ -96,7 +96,7 @@ Requires: htmltools, jsonlite, yaml
 Package: httpuv
 Source: CRAN
 Version: 1.5.4
-Hash: 8c8e24cfefa0977e389e458129cf96e3
+Hash: cbba9b509a2e22abb779d78dc2d10347
 Requires: BH, R6, Rcpp, later, promises
 
 Package: jsonlite
@@ -113,7 +113,7 @@ Requires: evaluate, highr, markdown, stringr, xfun, yaml
 Package: later
 Source: CRAN
 Version: 1.1.0.1
-Hash: 0c6d0dbad70a1b8698919b5d70e8a430
+Hash: 8f99c9a28895898e317aa151c270bfe8
 Requires: BH, Rcpp, rlang
 
 Package: magrittr
@@ -158,7 +158,7 @@ Requires: R6, ps
 Package: promises
 Source: CRAN
 Version: 1.1.1
-Hash: 0f58aaef1b398b33f902cd50cb50d2d0
+Hash: 85e0d3e4b300ff725cc7779a4c322f63
 Requires: R6, Rcpp, later, magrittr, rlang
 
 Package: ps

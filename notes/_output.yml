@@ -6,6 +6,5 @@ bookdown::gitbook:
         <li><a href="./">Modelling Probabilistic Worlds - Notes</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Goto Repository</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf", "epub"]
 

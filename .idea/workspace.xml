@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(notes): Enables build of the notebook&#10;&#10;- Adds config changes">
-      <change afterPath="$PROJECT_DIR$/notes/01-worlds.Rmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/02-hidden.Rmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config">
+      <change afterPath="$PROJECT_DIR$/.idea/rAvailablePackageCache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rpackages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dart_lab/dart_lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dart_lab/dart_lab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/_bookdown.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes/_bookdown.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/_output.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes/_output.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/index.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/notes/index.Rmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/main.R" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/packrat/packrat.lock" beforeDir="false" afterPath="$PROJECT_DIR$/notes/packrat/packrat.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/notes/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +82,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="R..Rprofile">
     <configuration name="Tests in dart_lab_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/dart_lab/test/dart_lab_test.dart" />
       <option name="testName" value="dart_lab_test.dart" />
       <method v="2" />
     </configuration>
+    <configuration name=".Rprofile" type="R" temporary="true">
+      <r-file-path value="$PROJECT_DIR$/notes/.Rprofile" />
+      <working-directory value="$PROJECT_DIR$/notes" />
+      <interpreter-arguments value="--slave --no-save --no-restore --no-site-file --no-environ" />
+      <script-arguments value="" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="R..Rprofile" />
         <item itemvalue="Dart Test.Tests in dart_lab_test.dart" />
       </list>
     </recent_temporary>
@@ -150,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608101714809</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config">
+      <created>1608188265375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608188265375</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +186,7 @@
     <MESSAGE value="chore(R): Adds packrat to manage R dependencies &amp; initial book files" />
     <MESSAGE value="chore(notes): Adds all the initial bookdown files for notebook" />
     <MESSAGE value="chore(R): Includes package rat files" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(R): Includes package rat files" />
+    <MESSAGE value="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config" />
   </component>
 </project>
