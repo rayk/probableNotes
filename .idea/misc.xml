@@ -6,7 +6,56 @@
   <component name="RMarkdownSettings">
     <option name="renderProfiles">
       <map>
+        <entry key="file://$PROJECT_DIR$/notes/01-intro.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/01-worlds.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/02-hidden.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/02-worlds.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/_main.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/notes/index.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/main.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/worlds.Rmd">
           <value>
             <RMarkdownRenderProfile>
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
