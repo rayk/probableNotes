@@ -1,0 +1,5 @@
+book_filename: "notes"
+language:
+  ui:
+    chapter_name: "Topics "
+delete_merged_file: true

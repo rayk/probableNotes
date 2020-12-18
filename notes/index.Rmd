@@ -1,0 +1,26 @@
+--- 
+title: "Modelling Probabilistic Worlds"
+subtitle: "Notes & Worked Examples"
+author: "Ray King"
+date: "Last Updated `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rayk/probableNotes
+description: "Running notes on probabilistic programming."
+---
+
+# What's This
+
+Notes written by me for me on modelling probabilistic worlds and the implementation of those models. If others 
+find them helpful all the better.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
