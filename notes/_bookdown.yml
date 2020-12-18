@@ -4,3 +4,4 @@ language:
     chapter_name: "Topics "
 delete_merged_file: true
 output_dir: "out"
+rmd_field: [index.Rmd]
