@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build Book" type="R" singleton="false">
+    <r-file-path value="$PROJECT_DIR$/notes/build.R" />
+    <working-directory value="$PROJECT_DIR$/notes" />
+    <interpreter-arguments value="" />
+    <script-arguments value="" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
