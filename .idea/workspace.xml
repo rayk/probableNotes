@@ -1,38 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(notes): Adds script to build notebook">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Build_Book.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/anchor-sections-1.0/anchor-sections.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/anchor-sections-1.0/anchor-sections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-bookdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-clipboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-fontsettings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-highlight.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/plugin-table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/app.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/clipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/jquery.highlight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/lunr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/plugin-bookdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/plugin-clipboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/plugin-fontsettings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/plugin-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/gitbook-2.6.7/js/plugin-sharing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/header-attrs-2.5/header-attrs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/libs/jquery-2.2.3/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/reference-keys.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/search_index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore: Update git">
       <change beforePath="$PROJECT_DIR$/notes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/notes/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/_bookdown.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notes/_bookdown.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/packages.bib" beforeDir="false" afterPath="$PROJECT_DIR$/notes/packages.bib" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608188265375</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore(gh-pages): Updates the gitignore">
+      <created>1608269981587</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608269981587</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore: Update git">
+      <created>1608270029872</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608270029872</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +259,8 @@
     <MESSAGE value="chore(notes): Adds all the initial bookdown files for notebook" />
     <MESSAGE value="chore(R): Includes package rat files" />
     <MESSAGE value="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config" />
+    <MESSAGE value="chore(gh-pages): Updates the gitignore" />
+    <MESSAGE value="chore: Update git" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Update git" />
   </component>
 </project>
