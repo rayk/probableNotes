@@ -1,3 +1,0 @@
-# World View {#open_closed_worlds}
-
-This is the introduction
