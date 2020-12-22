@@ -45,7 +45,9 @@ _**OR**_
 > --- Statistical Rethinking
 
 
-## Small Close Worlds
+## Small Close Worlds 
+
+(ref:scw) A defined text reference **here**.
 
 Closed world models are actual what the name suggest, that are absence any of noise and messiness of the real world.
 

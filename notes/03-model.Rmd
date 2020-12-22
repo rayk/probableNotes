@@ -16,3 +16,14 @@ The key characteristic of a model is its bidirectional nature.
 
 These characteristic are the corner stones of interactive iterative execution that delivers actionable knowledge.
 
+## Components
+
+A model is built up by compositing together various components.
+
+### Parameters
+
+Sometimes referred to as random variable, we deliberately used the term parameter here to avoid confusion with variables
+in the implementation environment.
+
+
+

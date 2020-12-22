@@ -16,7 +16,8 @@
         <entry key="file://$PROJECT_DIR$/notes/01-worlds.Rmd">
           <value>
             <RMarkdownRenderProfile>
-              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes/out" />
+              <option name="lastOutput" value="$PROJECT_DIR$/notes/worlds.html" />
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
             </RMarkdownRenderProfile>
           </value>
         </entry>
@@ -72,6 +73,7 @@
         <entry key="file://$PROJECT_DIR$/notes/03-model.Rmd">
           <value>
             <RMarkdownRenderProfile>
+              <option name="lastOutput" value="$PROJECT_DIR$/notes/model.html" />
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
             </RMarkdownRenderProfile>
           </value>
@@ -100,6 +102,7 @@
         <entry key="file://$PROJECT_DIR$/notes/04-distributions.Rmd">
           <value>
             <RMarkdownRenderProfile>
+              <option name="lastOutput" value="$PROJECT_DIR$/notes/distributions.html" />
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
             </RMarkdownRenderProfile>
           </value>
@@ -121,6 +124,21 @@
         <entry key="file://$PROJECT_DIR$/notes/05-model.Rmd">
           <value>
             <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/99-definations.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
+            </RMarkdownRenderProfile>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notes/99-definitions.Rmd">
+          <value>
+            <RMarkdownRenderProfile>
+              <option name="lastOutput" value="$PROJECT_DIR$/notes/definations.html" />
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
             </RMarkdownRenderProfile>
           </value>

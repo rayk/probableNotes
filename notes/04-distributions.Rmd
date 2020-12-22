@@ -1,3 +1,11 @@
 # Distributions {#distributions}
 
 - Point in time description of plausibility.
+
+
+```{r, tidy = TRUE}
+
+distD <- dbinom(3,10, 0.34)
+distC <- pbinom(3,10,0.34)
+
+```
