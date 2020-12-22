@@ -3,5 +3,6 @@ worlds
 small-close-worlds
 large-open-worlds
 moving-between-worlds
-opacity
+probable
+model
 distributions
