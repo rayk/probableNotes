@@ -1,0 +1,21 @@
+# Worlds {#worlds}
+
+Not a literal world, rather it refers to an opaque process or mechanism that is:
+- Embedded within a larger system or exist alone.
+- Produces an output or moves into a state that is of interest.
+
+> "No matter if it is a white cat, or a black cat; as long as it can catch mice, it is a good cat."
+> --- Deng Xiaoping（鄧小平）
+
+The _'world'_, more precisely the world's _output_ or _state_ is the subject of a model. The quality of 
+this model rest completely on its ability to **replicate** and **explain** the outputs or states of interest.
+- A model's goal can be achieved by directly mapping and reflecting the elements of the real world.
+_**OR**_
+- A model's goal can be achieved by totally abstracting the elements of the real world.
+
+## Small Close Worlds
+
+## Large Open Worlds
+
+## Moving Between Worlds
+
