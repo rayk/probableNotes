@@ -5,6 +5,7 @@ Not a literal world, rather it refers to an opaque process or mechanism that is:
 - Produces an output or moves into a state that is of interest.
 
 > "No matter if it is a white cat, or a black cat; as long as it can catch mice, it is a good cat."
+> 
 > --- Deng Xiaoping（鄧小平）
 
 The _'world'_, more precisely the world's _output_ or _state_ is the subject of a model. The quality of 
