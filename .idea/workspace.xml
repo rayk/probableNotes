@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore: Update git">
-      <change afterPath="$PROJECT_DIR$/notes/out/distributions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/out/worlds.html" afterDir="false" />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="chore(notes): Updated notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dart_lab/dart_lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dart_lab/dart_lab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/01-worlds.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/notes/01-worlds.Rmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/deploy_to_gh_pages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/notes/deploy_to_gh_pages.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/out/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/out/reference-keys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/reference-keys.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/out/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/search_index.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608270029872</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chore(notes): Updated notes">
+      <created>1608598081733</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608598081733</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +239,7 @@
     <MESSAGE value="chore(notes): Enables build of the notebook&#10;&#10;- Changed book config" />
     <MESSAGE value="chore(gh-pages): Updates the gitignore" />
     <MESSAGE value="chore: Update git" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: Update git" />
+    <MESSAGE value="chore(notes): Updated notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(notes): Updated notes" />
   </component>
 </project>

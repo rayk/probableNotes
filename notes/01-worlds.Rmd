@@ -10,9 +10,40 @@ Not a literal world, rather it refers to an opaque process or mechanism that is:
 
 The _'world'_, more precisely the world's _output_ or _state_ is the subject of a model. The quality of 
 this model rest completely on its ability to **replicate** and **explain** the outputs or states of interest.
+                                                                                            
+**Achieving Its Goal**
 - A model's goal can be achieved by directly mapping and reflecting the elements of the real world.
+
 _**OR**_
+
 - A model's goal can be achieved by totally abstracting the elements of the real world.
+  
+**Its Implementation**
+
+- Model is implemented as part Data Structure and Part Process _(Composition of Algorithms)_.
+
+- Has a verbose description _(Story)_ as to how it operates to give rise to the data it produces.
+
+- Can query itself to answer questions about it own structure.
+
+- Together it explains the real world phenomenon which it is intended to reflect.
+
+- Runs on a cycle where the model hences it's outputs are  updated as new evidence flows into the model.
+
+
+> The value of storytelling. 
+> The data story has value, even if you quickly abandon it and never use it to build a model or 
+> simulate new observations. Indeed, it is important to eventually discard the story, because many stories always 
+> correspond to the same model. As a result, showing that a model does a good job does not in turn uniquely support 
+> our data story. Still, the story has value because in trying to outline the story, often one realizes that 
+> additional questions must be answered. Most data stories are much more specific than are the verbal hypotheses 
+> that inspire data collection. Hypotheses can be vague, such as “it’s more likely to rain on warm days.” When you 
+> are forced to consider sampling and measurement and make a precise statement of how temperature predicts rain, 
+> many stories and resulting models will be consistent with the same vague hypothesis. 
+> Resolving that ambiguity often leads to important realizations and model revisions, before any model is fit to data.
+> 
+> --- Statistical Rethinking
+
 
 ## Small Close Worlds
 
