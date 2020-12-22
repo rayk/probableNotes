@@ -12,7 +12,7 @@ The _'world'_, more precisely the world's _output_ or _state_ is the subject of 
 this model rest completely on its ability to **replicate** and **explain** the outputs or states of interest.
                                                                                             
 **Achieving Its Goal**
-- A model's goal can be achieved by directly mapping and reflecting the elements of the real world.
+- A model's goal can be achieved by directly mapping and reflecting or approximating the elements of the real world.
 
 _**OR**_
 
@@ -47,7 +47,34 @@ _**OR**_
 
 ## Small Close Worlds
 
+Closed world models are actual what the name suggest, that are absence any of noise and messiness of the real world.
+
+- All the possibilities are nominated, no pure surprises, all the unknowns are known.
+
+- Having the unknowns identified allow us to reason about them.
+
+- The models' logic can be verified under given assumptions.
+
+Reasoning in the small world is based on negation by failure, ie: Not finding a condition or object is adequate to
+conclude it does not exist.
+
 ## Large Open Worlds
 
+Open world or open universe, aka real-life is vastly more complex and dynamic than the small worlds we build in out heads.
+Entities in the real world adaptive based on their own set of innate heuristics. This development shortcut gives rise to the following:
+
+- Entity Uncertainty, where an object may exist in the real world which is unknown or unobservable.
+
+- Magnitude Uncertainty, where the impact of a known or unknown object is not nominated.
+
+Hence, to conclude a subject does not exist in the open world, requires proofing that the existence of subject is 
+not possible. Not being able to do so simply mean it state or value is unknown.
+
 ## Moving Between Worlds
+
+- Small world models need to graduate to the open world before they can deliver any value.
+
+- No guarantees that a logically consistency small world model, will scale or perform well in a large world setting.
+
+- A models' performance in the open universe needs to be demonstrated as it can not logically deduce.
 
