@@ -7,3 +7,5 @@ probable
 model
 distributions
 definations
+components
+parameters
