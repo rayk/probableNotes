@@ -1,0 +1,28 @@
+# Probable {#probable}
+
+There many perspectives on statistics and probability stemming from the two predominate schools, the frequentest and
+the Bayesian's. It's not a choice between the two schools, one needs to adopt their own perspective or mental model of
+to master this body of knowledge.
+
+The perspective that dominates these notes, can be labelled, if it must, as _'rational quantification'_. It's
+a perspective that is can be characterised as:
+
+- Identification & measurement of known unknown by deduction.
+
+- Seeking to identify the unknown unknowns collectivity or individually by inference.
+
+- Focusing on growing a collection of models that can survive the onslaught of limited, noise laden, messy data rather
+than depending upon transformed and well wrangled data.
+
+- Practical incorporation of empirical knowledge into Priors.
+
+- Preference for arriving at outcomes via simulation then analytical calculations.
+
+- Preference for model that can explain themselves over black box or mathematical devices.
+
+- Incorporation time vectors in all, but the simplest of models.
+
+Adoption of the above opinionated perspective focuses the descriptions and examples in these notes, where shortcoming are evident
+they are called out.
+
+

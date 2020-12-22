@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="notes(worlds): Adds point on what a model is.">
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="notes(worlds): Adds point on difference of small and large world.">
+      <change afterPath="$PROJECT_DIR$/notes/02-probable.Rmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/03-model.Rmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/01-worlds.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/notes/01-worlds.Rmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/02-opacity.Rmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/03-distribution.Rmd" beforeDir="false" afterPath="$PROJECT_DIR$/notes/04-distributions.Rmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/out/distributions.html" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/distributions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/out/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/out/opacity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/out/reference-keys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/reference-keys.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/out/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/search_index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/out/worlds.html" beforeDir="false" afterPath="$PROJECT_DIR$/notes/out/worlds.html" afterDir="false" />
     </list>
@@ -207,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608599680172</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="notes(worlds): Adds point on difference of small and large world.">
+      <created>1608601816194</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608601816194</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +264,7 @@
     <MESSAGE value="chore: Update git" />
     <MESSAGE value="chore(notes): Updated notes" />
     <MESSAGE value="notes(worlds): Adds point on what a model is." />
-    <option name="LAST_COMMIT_MESSAGE" value="notes(worlds): Adds point on what a model is." />
+    <MESSAGE value="notes(worlds): Adds point on difference of small and large world." />
+    <option name="LAST_COMMIT_MESSAGE" value="notes(worlds): Adds point on difference of small and large world." />
   </component>
 </project>

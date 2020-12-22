@@ -1,0 +1,18 @@
+# Model {#model}
+
+We build models to discover the hidden and illuminate the opaque in real world systems, process and entities. Specifically
+a model or set of models are applied to:
+
+- Estimating or recovering a lost or unknown value of a system parameter of interest.
+- Measuring the impact of changes to the system.
+- Verification of responses intended to influence the outcome of a system.
+- Locating of high leverage or change resistant areas within a system.
+- Identified of hidden factors within a system.
+
+The key characteristic of a model is its bidirectional nature. 
+
+- Forward execution generates outcomes based on model assumptions and provide evidence.
+- Backwards execution generates a set of plausible explanations and inputs for an observed outcome.
+
+These characteristic are the corner stones of interactive iterative execution that delivers actionable knowledge.
+
