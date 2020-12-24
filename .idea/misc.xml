@@ -153,6 +153,7 @@
         <entry key="file://$PROJECT_DIR$/notes/index.Rmd">
           <value>
             <RMarkdownRenderProfile>
+              <option name="lastOutput" value="$PROJECT_DIR$/notes/whats-this.html" />
               <option name="outputDirectoryUrl" value="file://$PROJECT_DIR$/notes" />
             </RMarkdownRenderProfile>
           </value>

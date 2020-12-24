@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="notes(model): Adds description of what is a model." />
+    <list default="true" id="6be7d6d6-cdb3-4798-b498-a2cd3816e410" name="Default Changelist" comment="notes(model): Updated notes">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dart_lab/dart_lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dart_lab/dart_lab.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +23,13 @@
         <option value="Dart File" />
         <option value="RMarkdown.document" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -75,7 +88,7 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.r.configuration.RSettingsProjectConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="R.Build Book">
+  <component name="RunManager" selected="Shell Script.deploy_to_gh_pages.sh">
     <configuration name="Tests in dart_lab_test.dart" type="DartTestRunConfigurationType" factoryName="Dart Test" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/dart_lab/test/dart_lab_test.dart" />
       <option name="testName" value="dart_lab_test.dart" />
@@ -223,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608606718416</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="notes(model): Updated notes">
+      <created>1608768147947</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608768147947</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +287,7 @@
     <MESSAGE value="notes(worlds): Adds point on what a model is." />
     <MESSAGE value="notes(worlds): Adds point on difference of small and large world." />
     <MESSAGE value="notes(model): Adds description of what is a model." />
-    <option name="LAST_COMMIT_MESSAGE" value="notes(model): Adds description of what is a model." />
+    <MESSAGE value="notes(model): Updated notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="notes(model): Updated notes" />
   </component>
 </project>
