@@ -3,9 +3,11 @@
 - Point in time description of plausibility.
 
 
-```{r, tidy = TRUE}
+```{r, tidy = TRUE, tidy.opts=list(arrow=TRUE, indent=2), collapse = TRUE, comment = ''}
 
 distD <- dbinom(3,10, 0.34)
 distC <- pbinom(3,10,0.34)
+
+distC
 
 ```

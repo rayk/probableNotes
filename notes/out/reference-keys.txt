@@ -5,7 +5,7 @@ large-open-worlds
 moving-between-worlds
 probable
 model
-distributions
-definations
 components
 parameters
+distributions
+definations

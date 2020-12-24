@@ -71,6 +71,11 @@ Source: CRAN
 Version: 1.0.1
 Hash: d272cd728e4095b3964181b44763f46c
 
+Package: formatR
+Source: CRAN
+Version: 1.7
+Hash: 60dec134ecd2fd23c658b8057c76317a
+
 Package: glue
 Source: CRAN
 Version: 1.4.2

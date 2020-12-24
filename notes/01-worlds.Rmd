@@ -74,9 +74,11 @@ not possible. Not being able to do so simply mean it state or value is unknown.
 
 ## Moving Between Worlds
 
-- Small world models need to graduate to the open world before they can deliver any value.
+- Small world [models](#model) need to graduate to the open world before they can deliver any value.
 
 - No guarantees that a logically consistency small world model, will scale or perform well in a large world setting.
+
+- Yet a logically inconsistent small world model, will certainly not perform well in a large world setting.
 
 - A models' performance in the open universe needs to be demonstrated as it can not logically deduce.
 
