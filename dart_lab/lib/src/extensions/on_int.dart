@@ -1,12 +1,19 @@
 import 'dart:math';
 
+/// Private cache used for the calculation factorial.
 final _unprotectedFactCache = {0: 1, 1: 1};
 
 /// Extensions for [int] type.
 extension OnInt on int {
-  /// Returns the factorial of this int.
-  int get factorial {
-    // calculates the factorial of n.
+  /// Approximate factorial when n greater then this value.
+  static const int thresholdForApprox = 20;
+
+  /// Returns the factorial of this int, (n!).
+  ///
+  /// For n <= 30 a value is calculated, for higher values
+  /// a Stirling approximation of factorial is returned.
+  num get factorial {
+    // Calculates the factorial of n.
     int calcFactorial(int n) {
       for (var i = 2; i <= n; i += 1) {
         if (!_unprotectedFactCache.containsKey(i)) {
@@ -16,13 +23,14 @@ extension OnInt on int {
       return _unprotectedFactCache[n];
     }
 
-    // approximation of factorial n.
-    int approxFactorial(int n) =>
-        (sqrt(2 * pi * n) * pow((n / e), n)).ceil();
+    // Stirling's factorial approximation of n.
+    num approxFactorial(int n) => (sqrt(2 * pi * n) * pow((n / e), n));
+
+    print('Value $this');
 
     return this == 0 || this == 1
         ? 1
-        : this <= 21
+        : this <= thresholdForApprox
             ? calcFactorial(this)
             : approxFactorial(this);
   }

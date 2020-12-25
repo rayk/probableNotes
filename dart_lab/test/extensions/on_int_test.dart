@@ -3,6 +3,7 @@ import 'package:dart_lab/src/extensions/on_int.dart';
 
 void main() {
   group('Factorial:', () {
+    
     test('Should return 1 for 0!', () {
       expect(0.factorial, equals(1));
     });
@@ -63,8 +64,9 @@ void main() {
       expect(20.factorial, equals(2432902008176640000));
     });
     
-    test('Should return approx 51,090,942,171,709,440,000 for 21!', () {
-      print(22.factorial);
+    test('Should return approx 8.200764697241122e+33 for 31!', () {
+      expect(31.factorial, 8.200764697241122e+33);
     });
+    
   });
 }
