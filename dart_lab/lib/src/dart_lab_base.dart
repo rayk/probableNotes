@@ -1,6 +1,4 @@
-// TODO: Put public facing types in this file.
+/// Dart Lab Public API
+library dart_lab;
 
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
-}
+export 'extensions/extensions.dart';
