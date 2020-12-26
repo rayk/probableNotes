@@ -25,8 +25,7 @@ class Combinations<T> extends Combinatorics<T> {
 
   @override
   List<T> operator [](Object k) {
-    // TODO: implement []
-    throw UnimplementedError();
+
   }
   
 }

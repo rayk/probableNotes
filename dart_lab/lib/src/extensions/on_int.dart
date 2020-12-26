@@ -26,8 +26,6 @@ extension OnInt on int {
     // Stirling's factorial approximation of n.
     num approxFactorial(int n) => (sqrt(2 * pi * n) * pow((n / e), n));
 
-    print('Value $this');
-
     return this == 0 || this == 1
         ? 1
         : this <= thresholdForApprox
