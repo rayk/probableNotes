@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:dart_lab/src/extensions/extensions.dart';
 
 /// Base class for all combinatorics counting.
 abstract class Combinatorics<T> {
@@ -119,3 +120,33 @@ BigInt biIdxKey(Object idx) => idx is int
 
 /// Returns an index in the domain [0, n[.
 BigInt adjIdxKey(BigInt k, BigInt n) => k % n;
+
+/// The number of ways to choose a sample of [size] elements from a set of
+/// distinct [items] where order does matter and replacements are not allowed.
+/// When items = size this reduces to n!, a simple factorial of n.
+BigInt countPermutations(int items, int size) =>
+    BigInt.from(items.factorial ~/ (items - size).factorial);
+
+BigInt countCombination(int itemCount, int samples) =>
+    countPermutations(itemCount, samples) ~/ BigInt.from(itemCount.factorial);
+
+/// Returns the `k`th combination in list of combinations, where each
+/// combination from [items] has a length of [r].
+List<T> combination<T>(BigInt k, int r, List<T> items) {
+  if (r == 0) {
+    return <T>[];
+  }
+
+  int n = items.length, position = 0;
+
+  BigInt d = countCombination(n - position - 1, r - 1);
+
+  while (k >= d) {
+    k -= d;
+    position += 1;
+    d = countCombination(n - position - 1, r - 1);
+  }
+
+  var tail = items.sublist(position.toInt() + 1);
+  return [items[position.toInt()]]..addAll(combination<T>(k, r - 1, tail));
+}
