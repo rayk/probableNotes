@@ -81,7 +81,7 @@ void main() {
     test('Should return number of combinations using 4 items from list.', () {
       expect(controlList.countCombinationsOf(4), equals(BigInt.from(35)));
     });
-    
+
     test('Should return number of combinations using 5 items form list.', () {
       expect(controlList.countCombinationsOf(5), equals(BigInt.from(21)));
     });
@@ -104,7 +104,7 @@ void main() {
     test('Should return number of permutations using 4 items from list.', () {
       expect(controlList.countPermutationsOf(4), equals(BigInt.from(840)));
     });
-    
+
     test('Should return number of permutations using 6 items from list.', () {
       expect(controlList.countPermutationsOf(6), equals(BigInt.from(5040)));
     });
@@ -112,6 +112,43 @@ void main() {
     test('Should return same value from permutations as using all items.', () {
       expect(controlList.countPermutationsOf(controlList.length),
           equals(controlList.permutations));
+    });
+  });
+
+  group('Operations on values:', () {
+    var values = <int>[2, 38, 39, 27, 6, 12, 31, 28, 30, 23];
+    var other = <bool>[true, false];
+    
+    test('Should return the smalled value in the list.', () {
+      expect(values.min, equals(2));
+    });
+    
+    test('Should return the largest values in the list.', () {
+      expect(values.max, equals(39));
+    });
+    
+    test('Should sum all the values in the list.', () {
+      expect(values.sum, equals(236));
+    });
+    
+    test('Should multiple each value in the list.', () {
+      expect(values.product, equals(3450986622720));
+    });
+    
+    test('Should return the median value in the list.', () {
+      expect(values.median, equals(27.5));
+    });
+    
+    test('Should return the mean value from the list.', () {
+      expect(values.mean, equals(23.6));
+    });
+    
+    test('Should return the variance of the value in the list.', () {
+      expect(values.variance, equals(148.23999999999998));
+    });
+    
+    test('Should return the standard deviation of the values in the list.', () {
+      expect(values.standardDeviation, equals(12.175385004179539));
     });
   });
 }

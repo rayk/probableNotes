@@ -124,8 +124,8 @@ BigInt adjIdxKey(BigInt k, BigInt n) => k % n;
 /// The number of ways to choose a sample of [size] elements from a set of
 /// distinct [items] where order does matter and replacements are not allowed.
 /// When items = size this reduces to n!, a simple factorial of n.
-BigInt countPermutations(int items, int size) =>
-    BigInt.from(items.factorial ~/ (items - size).factorial);
+BigInt countPermutations(int items, int size) => 
+    BigInt.from(items.factorial) ~/ BigInt.from((items - size).factorial);
 
 BigInt countCombination(int itemCount, int samples) =>
     countPermutations(itemCount, samples) ~/ BigInt.from(itemCount.factorial);

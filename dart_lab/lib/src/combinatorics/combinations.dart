@@ -57,7 +57,7 @@ class Combinations<T> extends Combinatorics<T> {
     var sb = StringBuffer();
     sb.writeln('\nCombinations From:');
     sb.writeln(_items.toString());
-    sb.writeln('-> ${count} combinations generated, each containing $size elements.');
+    sb.writeln('-> ${count.toString()} combinations generated, each containing $size elements.');
     return sb.toString();
   }
 }
