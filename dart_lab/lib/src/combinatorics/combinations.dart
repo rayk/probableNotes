@@ -30,15 +30,27 @@ class Combinations<T> extends Combinatorics<T> {
 
   /// Return a count of the number of generated combinations.
   BigInt get count => _items.countCombinationsOf(_r);
-  
+
   /// Returns the index that can be used to retrieve a generated combination
   /// that matches [combination].
   BigInt indexOf(List<T> combination, [BigInt start]) {
+    BigInt combIdx;
     start = start ?? BigInt.zero;
-    
-    if(contains(combination)) {
-      
+
+    if (contains(combination)) {
+      combIdx = inverseCombination(combination, _items);
+      if (combIdx >= start) {
+        return combIdx;
+      }
+
+      if (combIdx < start) {
+        combIdx = BigInt.from(-1);
+      }
+    } else {
+      combIdx = BigInt.from(-1);
     }
+
+    return combIdx;
   }
 
   @override
@@ -48,7 +60,7 @@ class Combinations<T> extends Combinatorics<T> {
         adjIdxKey(idx, BigInt.from(_items.length)), size, _items);
   }
 
-  /// Returns true when [x] in contains in the combinations elements. 
+  /// Returns true when [x] in contains in the combinations elements.
   bool contains(Object x) =>
       _items.containsEveryItemIn(x) && _items.isEachUnique;
 
@@ -57,7 +69,8 @@ class Combinations<T> extends Combinatorics<T> {
     var sb = StringBuffer();
     sb.writeln('\nCombinations From:');
     sb.writeln(_items.toString());
-    sb.writeln('-> ${count.toString()} combinations generated, each containing $size elements.');
+    sb.writeln(
+        '-> ${count.toString()} combinations generated, each containing $size elements.');
     return sb.toString();
   }
 }

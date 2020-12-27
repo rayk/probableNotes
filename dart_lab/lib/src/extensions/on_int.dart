@@ -12,7 +12,8 @@ extension OnInt on int {
   ///
   /// For n <= 30 a value is calculated, for higher values
   /// a Stirling approximation of factorial is returned.
-  num get factorial {
+  BigInt get factorial {
+    
     // Calculates the factorial of n.
     int calcFactorial(int n) {
       for (var i = 2; i <= n; i += 1) {
@@ -26,10 +27,10 @@ extension OnInt on int {
     // Stirling's factorial approximation of n.
     num approxFactorial(int n) => (sqrt(2 * pi * n) * pow((n / e), n));
 
-    return this == 0 || this == 1
-        ? 1
+    return this == 0 || this == 1 || this <= -1
+        ? BigInt.one
         : this <= thresholdForApprox
-            ? calcFactorial(this)
-            : approxFactorial(this);
+            ? BigInt.from(calcFactorial(this))
+            : BigInt.from(approxFactorial(this));
   }
 }

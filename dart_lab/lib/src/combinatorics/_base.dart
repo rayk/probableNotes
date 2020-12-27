@@ -1,5 +1,128 @@
 import 'dart:math';
+
 import 'package:dart_lab/src/extensions/extensions.dart';
+
+/// Returns an index in the domain [0, n[.
+BigInt adjIdxKey(BigInt k, BigInt n) => k % n;
+
+/// Returns BigInt Index Key.
+BigInt biIdxKey(Object idx) => idx is int
+    ? BigInt.from(idx)
+    : idx is BigInt
+        ? idx
+        : throw ArgumentError('An Index must be an integer or BigInt.');
+
+/// Returns the `k`th combination, generated from [elements] where each
+/// combination is [combSize] long.
+List<T> combination<T>(BigInt kTh, int combSize, List<T> elements) {
+  if (combSize == 0) {
+    return <T>[];
+  }
+
+  final elementCount = elements.length;
+
+  int pos = 0;
+  int startPos = elementCount - 1;
+
+  BigInt d = countCombinations(startPos, combSize - 1);
+
+  while (kTh >= d) {
+    kTh -= d;
+    pos += 1;
+    d = countCombinations(elementCount - pos - 1, combSize - 1);
+  }
+
+  var tail = elements.sublist(pos.toInt() + 1);
+  return [elements[pos.toInt()]]
+    ..addAll(combination<T>(kTh, combSize - 1, tail));
+}
+
+/// Returns the number of arrangements of [sampleSize] length that can be
+/// created from [elementCount] distinct elements.
+BigInt countCombinations(int elementCount, int sampleSize) =>
+    countPermutations(elementCount, sampleSize) ~/ sampleSize.factorial;
+
+/// The number of ways to choose a sample of [sampleSize] elements from a set of
+/// distinct [elementCount] where order does matter and replacements are not allowed.
+/// When items = size this reduces to n!, a simple factorial of n.
+BigInt countPermutations(int elementCount, int sampleSize) =>
+    elementCount.factorial ~/ (elementCount - sampleSize).factorial;
+
+/// Returns the index of combination in the order list of [combinations] of
+/// combinations items taken from [elements].
+BigInt inverseCombination<T>(List<T> combinations, List<T> elements) {
+  if (combinations.isEmpty) {
+    return BigInt.zero;
+  }
+
+  int r = combinations.length, n = elements.length, eleIdx = 0;
+  BigInt k = BigInt.zero;
+
+  while (combinations[0] != elements[eleIdx.toInt()]) {
+    k += countCombinations(n - eleIdx - 1, r - 1);
+    eleIdx += 1;
+  }
+
+  return k +
+      inverseCombination<T>(
+          combinations.sublist(1), elements.sublist((eleIdx + 1).toInt()));
+}
+
+BigInt inversePermutation<T>(List<T> permutations, List<T> elements) {
+  int r = permutations.length;
+  if (r == 0) {
+    return BigInt.zero;
+  }
+
+  var sortedPermutation = sortArrangement<T>(permutations, elements);
+  BigInt group = inverseCombination<T>(sortedPermutation, elements);
+  return group * r.factorial +
+      _inversePermutationWorker<T>(permutations, sortedPermutation);
+}
+
+/// Returns the `k`th permutation, generated from [elements].
+List<T> permutation<T>(BigInt kTh, int permSize, List<T> elements) {
+  BigInt fact = permSize.factorial, group = kTh ~/ fact, item = kTh % fact;
+  List<T> combo = combination<T>(group, permSize, elements);
+  return _permutationWorker<T>(item, combo);
+}
+
+/// Returns the items in [arrangement] in the same order as they appear in
+/// [elements]
+List<T> sortArrangement<T>(List<T> arrangement, List<T> elements) =>
+    (List<T>.from(arrangement))
+      ..sort((x, y) => elements.indexOf(x).compareTo(elements.indexOf(y)));
+
+List<T> _permutationWorker<T>(BigInt kTh, List<T> items) {
+  int n = items.length;
+  if (n <= 1) {
+    return items;
+  } else {
+    BigInt biN = BigInt.from(n),
+        group = (kTh ~/ biN),
+        mod = kTh % biN,
+        pos = group % BigInt.two == BigInt.zero ? biN - mod - BigInt.one : mod;
+
+    return _permutationWorker<T>(group, items.sublist(0, n - 1))
+      ..insert(pos.toInt(), items[n - 1]);
+  }
+}
+
+BigInt _inversePermutationWorker<T>(
+    List<T> permutations, List<T> sortedPermutations) {
+  if (permutations.length == 1) {
+    return BigInt.zero;
+  }
+  int n = sortedPermutations.length;
+
+  BigInt biN = BigInt.from(n),
+      index = BigInt.from(permutations.indexOf(sortedPermutations.last)),
+      group = _inversePermutationWorker<T>(
+          permutations.where((x) => x != sortedPermutations.last).toList(),
+          sortedPermutations.sublist(0, sortedPermutations.length - 1));
+  return biN * group +
+      (group % BigInt.two == BigInt.zero ? biN - index - BigInt.one : index);
+}
 
 /// Base class for all combinatorics counting.
 abstract class Combinatorics<T> {
@@ -7,18 +130,14 @@ abstract class Combinatorics<T> {
   List<T> _elements;
   BigInt _length;
 
-  /// Returns all the member elements from which object are selected.
-  List<T> get members => List<T>.from(_elements, growable: false);
-
   /// Returns an iterable with all the specified arrangements of the members.
   Iterable get iterable => this();
 
-  Iterable<List<T>> _range(BigInt from, BigInt to) sync* {
-    do {
-      yield this[adjIdxKey(from, _length)];
-      from += BigInt.one;
-    } while (adjIdxKey(from, _length) != adjIdxKey(to, _length));
-  }
+  /// Returns all the member elements from which object are selected.
+  List<T> get members => List<T>.from(_elements, growable: false);
+
+  /// The k th arrangement.
+  List<T> operator [](Object k);
 
   /// Returns
   Iterable<List<T>> call([Object fromTo, Object to]) {
@@ -107,46 +226,10 @@ abstract class Combinatorics<T> {
     }
   }
 
-  /// The k th arrangement.
-  List<T> operator [](Object k);
-}
-
-/// Returns BigInt Index Key.
-BigInt biIdxKey(Object idx) => idx is int
-    ? BigInt.from(idx)
-    : idx is BigInt
-        ? idx
-        : throw ArgumentError('An Index must be an integer or BigInt.');
-
-/// Returns an index in the domain [0, n[.
-BigInt adjIdxKey(BigInt k, BigInt n) => k % n;
-
-/// The number of ways to choose a sample of [size] elements from a set of
-/// distinct [items] where order does matter and replacements are not allowed.
-/// When items = size this reduces to n!, a simple factorial of n.
-BigInt countPermutations(int items, int size) => 
-    BigInt.from(items.factorial) ~/ BigInt.from((items - size).factorial);
-
-BigInt countCombination(int itemCount, int samples) =>
-    countPermutations(itemCount, samples) ~/ BigInt.from(itemCount.factorial);
-
-/// Returns the `k`th combination in list of combinations, where each
-/// combination from [items] has a length of [r].
-List<T> combination<T>(BigInt k, int r, List<T> items) {
-  if (r == 0) {
-    return <T>[];
+  Iterable<List<T>> _range(BigInt from, BigInt to) sync* {
+    do {
+      yield this[adjIdxKey(from, _length)];
+      from += BigInt.one;
+    } while (adjIdxKey(from, _length) != adjIdxKey(to, _length));
   }
-
-  int n = items.length, position = 0;
-
-  BigInt d = countCombination(n - position - 1, r - 1);
-
-  while (k >= d) {
-    k -= d;
-    position += 1;
-    d = countCombination(n - position - 1, r - 1);
-  }
-
-  var tail = items.sublist(position.toInt() + 1);
-  return [items[position.toInt()]]..addAll(combination<T>(k, r - 1, tail));
 }

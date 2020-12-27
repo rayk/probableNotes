@@ -14,12 +14,12 @@ extension OnList on List {
   /// Returns the count of possible combination using the given
   /// number of [items] from this list.
   BigInt countCombinationsOf(int items) =>
-      countPermutationsOf(items) ~/ BigInt.from(items.factorial);
+      countPermutationsOf(items) ~/ items.factorial;
 
-  /// Returns the count of possible permutations usint the given
+  /// Returns the count of possible permutations using the given
   /// number of [items] from this list.
   BigInt countPermutationsOf(int items) =>
-      BigInt.from(length.factorial) ~/ BigInt.from((length - items).factorial);
+      length.factorial ~/ (length - items).factorial;
 
   /// Returns the total number of combination possible using
   /// all the items in this list.
