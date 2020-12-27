@@ -29,9 +29,11 @@ _**OR**_
 - Together it explains the real world phenomenon which it is intended to reflect.
 
 - Runs on a cycle where the model hences it's outputs are  updated as new evidence flows into the model.
+        
 
 
-> The value of storytelling. 
+> **The value of storytelling**
+> 
 > The data story has value, even if you quickly abandon it and never use it to build a model or 
 > simulate new observations. Indeed, it is important to eventually discard the story, because many stories always 
 > correspond to the same model. As a result, showing that a model does a good job does not in turn uniquely support 
@@ -42,7 +44,8 @@ _**OR**_
 > many stories and resulting models will be consistent with the same vague hypothesis. 
 > Resolving that ambiguity often leads to important realizations and model revisions, before any model is fit to data.
 > 
-> --- Statistical Rethinking
+> --- Statistical Rethinking [@statRethink]
+
 
 
 ## Small Close Worlds 
@@ -62,8 +65,8 @@ conclude it does not exist.
 
 ## Large Open Worlds
 
-Open world or open universe, aka real-life is vastly more complex and dynamic than the small worlds we build in out heads.
-Entities in the real world adaptive based on their own set of innate heuristics. This development shortcut gives rise to the following:
+Open world or open universe, aka real-life is vastly more complex and dynamic than the small worlds we build in our heads.
+Entities in the real world adaptive based on their own set of innate heuristics. These development shortcut gives rise to the following:
 
 - Entity Uncertainty, where an object may exist in the real world which is unknown or unobservable.
 

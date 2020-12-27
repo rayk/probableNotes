@@ -25,4 +25,67 @@ than depending upon transformed and well wrangled data.
 Adoption of the above opinionated perspective focuses the descriptions and examples in these notes, where shortcoming are evident
 they are called out.
 
+## Counting
+
+At the core of probability is ability to count (_Combinatorics_) the number of way a given value/outcome could arise.
+
+- A _'Conjectures'_ is the label given to a possible outcome.
+- The plausibility of _conjecture_ is in portion to the number of way it could produce the observed outcome.
+- Not all _conjectures_ start with the same plausibility.
+- Assuming all conjectures are initially equally likely is a form of ignorance, as it excludes scientific context.
+
+When looking a set of objects, asking yourself: _'how many ... ?'_ your in the land of combinatorics.
+
+- Combinations
+- Permutations
+- Subsets
+
+### Factorial
+
+These are direct combinations of the members within a set, where each member can combine with any other member. The
+number of possible ways they could combine is given be the Factorial of number of members in the set.
+
+Where a set has:
+
+1 Member  = 1! = 1,
+
+2 Members = 2! = 1 x 2 = 2,
+
+3 Members = 3! = 1 x 2 x 3 = 6,
+
+4 Members = 4! = 1 x 2 x 3 x 4 = 24,
+
+5 Members = 5! = 1 x 2 x 3 x 4 x 5 = 120,
+
+6 Members = 61 = 1 X 2 X 3 X 4 X 5 X 6 = 720,
+
+Does not take long before there is combination explosion, 10! = 3,628,800 & 20! = 2.43 x 10^18.
+
+**R factorial function**
+```{r 'r_factoral', tidy = TRUE, collapse = TRUE, comment = '', fig.cap = 'Label'}
+factorial(0)
+factorial(1)
+factorial(3)
+factorial(6)
+factorial(12)
+factorial(24)
+```
+
+```{r }
+
+knitr::knit_engines$set(dart = function(options) { 
+  code <- paste(options$code)
+  out <- system2("dart", c("run ../dart_lab/bin/chunk_runner.dart", shQuote(code)), stdout = TRUE, wait = TRUE)
+  knitr::engine_output(options, code, out)
+})
+
+
+```
+
+**Dart Lib factorial function**
+```{dart 'dart_factorial', tidy=TRUE,  comment='', collapse=TRUE}
+var a = 1+1;
+return a;
+```                                 
+
 
