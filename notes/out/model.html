@@ -140,7 +140,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2" data-path="worlds.html"><a href="worlds.html#large-open-worlds"><i class="fa fa-check"></i><b>2.2</b> Large Open Worlds</a></li>
 <li class="chapter" data-level="2.3" data-path="worlds.html"><a href="worlds.html#moving-between-worlds"><i class="fa fa-check"></i><b>2.3</b> Moving Between Worlds</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a></li>
+<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probable.html"><a href="probable.html#counting"><i class="fa fa-check"></i><b>3.1</b> Counting</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="probable.html"><a href="probable.html#factorial"><i class="fa fa-check"></i><b>3.1.1</b> Factorial</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="model.html"><a href="model.html"><i class="fa fa-check"></i><b>4</b> Model</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="model.html"><a href="model.html#components"><i class="fa fa-check"></i><b>4.1</b> Components</a>
@@ -220,7 +226,7 @@ in the implementation environment.</p>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
 "linkedin": false,
@@ -235,7 +241,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-model.Rmd",
+"link": "https://github.com/rayk/probableNotes/blob/master/notes/03-model.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -246,12 +252,17 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["notes.pdf", "notes.epub"],
+"download": ["mpw_notes.pdf", "mpw_notes.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
 },
 "search": true,
-"info": true
+"info": true,
+"description": "Notes of how to model probabilistic worlds and how to implement those models."
 });
 });
 </script>

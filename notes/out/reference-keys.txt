@@ -4,6 +4,8 @@ small-close-worlds
 large-open-worlds
 moving-between-worlds
 probable
+counting
+factorial
 model
 components
 parameters
