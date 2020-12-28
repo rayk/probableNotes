@@ -2,4 +2,5 @@
 /// related Modeling Probabilistic Worlds.
 library dart_lab;
 
-export 'src/dart_lab_base.dart';
+export 'src/combinatorics/combinatorics.dart';
+export 'src/extensions/extensions.dart';
