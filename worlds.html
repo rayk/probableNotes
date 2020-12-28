@@ -140,7 +140,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2" data-path="worlds.html"><a href="worlds.html#large-open-worlds"><i class="fa fa-check"></i><b>2.2</b> Large Open Worlds</a></li>
 <li class="chapter" data-level="2.3" data-path="worlds.html"><a href="worlds.html#moving-between-worlds"><i class="fa fa-check"></i><b>2.3</b> Moving Between Worlds</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a></li>
+<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probable.html"><a href="probable.html#counting"><i class="fa fa-check"></i><b>3.1</b> Counting</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="probable.html"><a href="probable.html#factorial"><i class="fa fa-check"></i><b>3.1.1</b> Factorial</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="model.html"><a href="model.html"><i class="fa fa-check"></i><b>4</b> Model</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="model.html"><a href="model.html#components"><i class="fa fa-check"></i><b>4.1</b> Components</a>
@@ -196,8 +202,8 @@ this model rest completely on its ability to <strong>replicate</strong> and <str
 <li><p>Runs on a cycle where the model hences it’s outputs are updated as new evidence flows into the model.</p></li>
 </ul>
 <blockquote>
-<p>The value of storytelling.
-The data story has value, even if you quickly abandon it and never use it to build a model or
+<p><strong>The value of storytelling</strong></p>
+<p>The data story has value, even if you quickly abandon it and never use it to build a model or
 simulate new observations. Indeed, it is important to eventually discard the story, because many stories always
 correspond to the same model. As a result, showing that a model does a good job does not in turn uniquely support
 our data story. Still, the story has value because in trying to outline the story, often one realizes that
@@ -206,7 +212,7 @@ that inspire data collection. Hypotheses can be vague, such as “it’s more li
 are forced to consider sampling and measurement and make a precise statement of how temperature predicts rain,
 many stories and resulting models will be consistent with the same vague hypothesis.
 Resolving that ambiguity often leads to important realizations and model revisions, before any model is fit to data.</p>
-<p>— Statistical Rethinking</p>
+<p>— Statistical Rethinking <span class="citation">(<a href="definations.html#ref-statRethink" role="doc-biblioref">McElreath 2016</a>)</span></p>
 </blockquote>
 <div id="small-close-worlds" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Small Close Worlds</h2>
@@ -222,8 +228,8 @@ conclude it does not exist.</p>
 </div>
 <div id="large-open-worlds" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Large Open Worlds</h2>
-<p>Open world or open universe, aka real-life is vastly more complex and dynamic than the small worlds we build in out heads.
-Entities in the real world adaptive based on their own set of innate heuristics. This development shortcut gives rise to the following:</p>
+<p>Open world or open universe, aka real-life is vastly more complex and dynamic than the small worlds we build in our heads.
+Entities in the real world adaptive based on their own set of innate heuristics. These development shortcut gives rise to the following:</p>
 <ul>
 <li><p>Entity Uncertainty, where an object may exist in the real world which is unknown or unobservable.</p></li>
 <li><p>Magnitude Uncertainty, where the impact of a known or unknown object is not nominated.</p></li>
@@ -264,7 +270,7 @@ not possible. Not being able to do so simply mean it state or value is unknown.<
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
 "linkedin": false,
@@ -279,7 +285,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-worlds.Rmd",
+"link": "https://github.com/rayk/probableNotes/blob/master/notes/01-worlds.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -290,12 +296,17 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["notes.pdf", "notes.epub"],
+"download": ["mpw_notes.pdf", "mpw_notes.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
 },
 "search": true,
-"info": true
+"info": true,
+"description": "Notes of how to model probabilistic worlds and how to implement those models."
 });
 });
 </script>

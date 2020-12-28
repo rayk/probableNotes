@@ -140,7 +140,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2" data-path="worlds.html"><a href="worlds.html#large-open-worlds"><i class="fa fa-check"></i><b>2.2</b> Large Open Worlds</a></li>
 <li class="chapter" data-level="2.3" data-path="worlds.html"><a href="worlds.html#moving-between-worlds"><i class="fa fa-check"></i><b>2.3</b> Moving Between Worlds</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a></li>
+<li class="chapter" data-level="3" data-path="probable.html"><a href="probable.html"><i class="fa fa-check"></i><b>3</b> Probable</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probable.html"><a href="probable.html#counting"><i class="fa fa-check"></i><b>3.1</b> Counting</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="probable.html"><a href="probable.html#factorial"><i class="fa fa-check"></i><b>3.1.1</b> Factorial</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="model.html"><a href="model.html"><i class="fa fa-check"></i><b>4</b> Model</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="model.html"><a href="model.html#components"><i class="fa fa-check"></i><b>4.1</b> Components</a>
@@ -189,7 +195,53 @@ than depending upon transformed and well wrangled data.</p></li>
 </ul>
 <p>Adoption of the above opinionated perspective focuses the descriptions and examples in these notes, where shortcoming are evident
 they are called out.</p>
+<div id="counting" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Counting</h2>
+<p>At the core of probability is ability to count (<em>Combinatorics</em>) the number of way a given value/outcome could arise.</p>
+<ul>
+<li>A <em>‘Conjectures’</em> is the label given to a possible outcome.</li>
+<li>The plausibility of <em>conjecture</em> is in portion to the number of way it could produce the observed outcome.</li>
+<li>Not all <em>conjectures</em> start with the same plausibility.</li>
+<li>Assuming all conjectures are initially equally likely is a form of ignorance, as it excludes scientific context.</li>
+</ul>
+<p>When looking a set of objects, asking yourself: <em>‘how many … ?’</em> your in the land of combinatorics.</p>
+<ul>
+<li>Combinations</li>
+<li>Permutations</li>
+<li>Subsets</li>
+</ul>
+<div id="factorial" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Factorial</h3>
+<p>These are direct combinations of the members within a set, where each member can combine with any other member. The
+number of possible ways they could combine is given be the Factorial of number of members in the set.</p>
+<p>Where a set has:</p>
+<p>1 Member = 1! = 1,</p>
+<p>2 Members = 2! = 1 x 2 = 2,</p>
+<p>3 Members = 3! = 1 x 2 x 3 = 6,</p>
+<p>4 Members = 4! = 1 x 2 x 3 x 4 = 24,</p>
+<p>5 Members = 5! = 1 x 2 x 3 x 4 x 5 = 120,</p>
+<p>6 Members = 61 = 1 X 2 X 3 X 4 X 5 X 6 = 720,</p>
+<p>Does not take long before there is combination explosion, 10! = 3,628,800 &amp; 20! = 2.43 x 10^18.</p>
+<p><strong>R factorial function</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="probable.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">0</span>)</span>
+<span id="cb1-2"><a href="probable.html#cb1-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span></span>
+<span id="cb1-3"><a href="probable.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="probable.html#cb1-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">1</span></span>
+<span id="cb1-5"><a href="probable.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">3</span>)</span>
+<span id="cb1-6"><a href="probable.html#cb1-6" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">6</span></span>
+<span id="cb1-7"><a href="probable.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">6</span>)</span>
+<span id="cb1-8"><a href="probable.html#cb1-8" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">720</span></span>
+<span id="cb1-9"><a href="probable.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">12</span>)</span>
+<span id="cb1-10"><a href="probable.html#cb1-10" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="dv">479001600</span></span>
+<span id="cb1-11"><a href="probable.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">24</span>)</span>
+<span id="cb1-12"><a href="probable.html#cb1-12" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="fl">6.204484e+23</span></span></code></pre></div>
+<p><strong>Dart Lib factorial function</strong></p>
+<pre class="dart"><code>var fact = 6.factorial;
+return fact;</code></pre>
+<pre><code>-&gt; 720</code></pre>
 
+</div>
+</div>
 </div>
             </section>
 
@@ -213,7 +265,7 @@ they are called out.</p>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
 "linkedin": false,
@@ -228,7 +280,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-probable.Rmd",
+"link": "https://github.com/rayk/probableNotes/blob/master/notes/02-probable.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -239,12 +291,17 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["notes.pdf", "notes.epub"],
+"download": ["mpw_notes.pdf", "mpw_notes.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
 },
 "search": true,
-"info": true
+"info": true,
+"description": "Notes of how to model probabilistic worlds and how to implement those models."
 });
 });
 </script>
